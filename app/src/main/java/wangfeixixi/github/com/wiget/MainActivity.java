@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_timepicker;
     Button btn_editview;
     Button btn_calendar;
+    Button btn_sweet_dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_editview.setOnClickListener(this);
         btn_calendar = (Button) findViewById(R.id.btn_calendar);
         btn_calendar.setOnClickListener(this);
+        btn_sweet_dialog = (Button) findViewById(R.id.btn_sweet_dialog);
+        btn_sweet_dialog.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_calendar:
                 startActivity(new Intent(this, CalendarActivity.class));
+                break;
+            case R.id.btn_sweet_dialog:
+                startActivity(new Intent(this, SweetDialogActivity.class));
                 break;
         }
     }

@@ -25,4 +25,5 @@ dependencies {
     compile project(path: ':timepicker')
     compile project(path: ':EditView')
     compile project(path: ':Calendar')
+    compile project(path: ':Sweetdialog')
 }

@@ -11,14 +11,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="时间选择" />
+
     <Button
         android:id="@+id/btn_editview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="编辑框" />
+
     <Button
         android:id="@+id/btn_calendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="日历" />
+
+    <Button
+        android:id="@+id/btn_sweet_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dialog" />
 </LinearLayout>

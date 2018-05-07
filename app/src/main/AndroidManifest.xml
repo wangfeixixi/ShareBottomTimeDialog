@@ -19,6 +19,7 @@
         <activity android:name=".TimePikerActivity" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".EditViewActivity" />
+        <activity android:name=".SweetDialogActivity" />
 
     </application>
 
