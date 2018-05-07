@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TimePikerActivity" />
+        <activity android:name=".CalendarActivity" />
         <activity android:name=".EditViewActivity" />
 
     </application>

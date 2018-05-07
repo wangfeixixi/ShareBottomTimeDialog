@@ -24,4 +24,5 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     compile project(path: ':timepicker')
     compile project(path: ':EditView')
+    compile project(path: ':Calendar')
 }
