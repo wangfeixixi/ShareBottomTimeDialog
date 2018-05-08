@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="wangfeixixi.github.com.wiget.MainActivity">
 
@@ -29,4 +30,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="dialog" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button"
+        android:layout_width="40dp"
+        android:layout_height="24.6dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        app:sb_checked_color="#00C5FF"
+        app:sb_show_indicator="false"
+        app:sb_background="#dddddd"
+        app:sb_uncheck_color="#dddddd"/>
+
 </LinearLayout>
