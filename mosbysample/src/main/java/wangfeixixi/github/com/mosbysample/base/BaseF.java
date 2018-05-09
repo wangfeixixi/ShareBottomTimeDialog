@@ -27,7 +27,7 @@ public abstract class BaseF<V extends MvpView, P extends MvpPresenter<V>> extend
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View inflate = LayoutInflater.from(getContext()).inflate(R.layout.a_fragment, null);
+        View inflate = LayoutInflater.from(getContext()).inflate(initContentRes(), null);
         ButterKnife.bind(this, inflate);
         isPrepared = true;
         initView();
@@ -35,6 +35,15 @@ public abstract class BaseF<V extends MvpView, P extends MvpPresenter<V>> extend
         lazyLoad();
         return inflate;
     }
+
+    protected abstract int initContentRes();
+
+    protected abstract void initView();
+
+    protected abstract void initData(boolean firstLoad, boolean isVisibleToUser);
+
+    @NonNull
+    public abstract P createPresenter();
 
     private void lazyLoad() {
         if (isPrepared) {
@@ -47,9 +56,6 @@ public abstract class BaseF<V extends MvpView, P extends MvpPresenter<V>> extend
         }
     }
 
-    protected abstract void onUserVisible(boolean isVisible);
-
-    protected abstract void initView();
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
@@ -57,8 +63,5 @@ public abstract class BaseF<V extends MvpView, P extends MvpPresenter<V>> extend
         lazyLoad();
     }
 
-    protected abstract void initData(boolean firstLoad, boolean isVisibleToUser);
 
-    @NonNull
-    public abstract P createPresenter();
 }

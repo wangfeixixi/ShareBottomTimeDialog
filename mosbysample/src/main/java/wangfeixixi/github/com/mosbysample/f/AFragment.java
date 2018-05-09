@@ -13,9 +13,8 @@ public class AFragment extends BaseF<AView, APresent> implements AView {
     private String TAG = "AFragment";
 
     @Override
-    protected void onUserVisible(boolean isVisible) {
-
-        Log.d(TAG, "onUserVisible" + isVisible);
+    protected int initContentRes() {
+        return 0;
     }
 
     @Override
@@ -27,6 +26,7 @@ public class AFragment extends BaseF<AView, APresent> implements AView {
     @Override
     protected void initData(boolean firstLoad, boolean isVisibleToUser) {
         Log.d(TAG, "firstLoad" + firstLoad + "isVisibleToUser" + isVisibleToUser);
+        presenter.asdfas();
     }
 
     @NonNull
