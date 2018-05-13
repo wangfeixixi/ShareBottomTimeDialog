@@ -21,7 +21,7 @@ public class CFragment extends BaseF<CView, CPresent> implements CView {
     @Override
     protected void initView() {
 
-        tv_name.setText("CFragment");
+        getTv_name().setText("CFragment");
     }
 
     @Override

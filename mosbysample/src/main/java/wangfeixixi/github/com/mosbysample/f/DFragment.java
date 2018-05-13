@@ -21,7 +21,7 @@ public class DFragment extends BaseF<DView, DPresent> implements DView {
     @Override
     protected void initView() {
 
-        tv_name.setText("DFragment");
+        getTv_name().setText("DFragment");
     }
 
     @Override
