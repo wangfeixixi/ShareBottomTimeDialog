@@ -5,24 +5,13 @@ import android.util.Log;
 
 import wangfeixixi.github.com.mosbysample.base.BaseF;
 
-/**
- * Created by xuany on 2018/5/9.
- */
-
 public class BFragment extends BaseF<BView, BPresent> implements BView {
     private String TAG = "BFragment";
-
-
-    @Override
-    protected void onUserVisible(boolean isVisible) {
-
-        Log.d(TAG, "onUserVisible" + isVisible);
-    }
 
     @Override
     protected void initView() {
 
-        tv_name.setText("BFragment");
+        getTv_name().setText("BFragment");
     }
 
     @Override
@@ -35,5 +24,10 @@ public class BFragment extends BaseF<BView, BPresent> implements BView {
     @Override
     public BPresent createPresenter() {
         return new BPresent();
+    }
+
+    @Override
+    protected int initContentRes() {
+        return 0;
     }
 }
