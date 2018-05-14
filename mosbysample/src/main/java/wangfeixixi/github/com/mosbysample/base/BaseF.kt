@@ -14,20 +14,22 @@ import wangfeixixi.github.com.mosbysample.R
 
 abstract class BaseF<V : MvpView, P : MvpPresenter<V>> : MvpFragment<V, P>() {
 
-    @BindView(R.id.tv_name)
-    var tv_name: TextView? = null
-
     private var isPrepared = false
     private var firstLoad = true
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val inflate = LayoutInflater.from(context).inflate(initContentRes(), null)
         ButterKnife.bind(this, inflate)
+        return inflate
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         isPrepared = true
         initView()
 
         lazyLoad()
-        return inflate
+
     }
 
     protected abstract fun initContentRes(): Int

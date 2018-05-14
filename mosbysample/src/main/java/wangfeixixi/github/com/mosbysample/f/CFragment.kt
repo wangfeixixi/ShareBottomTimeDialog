@@ -6,21 +6,29 @@ import wangfeixixi.github.com.mosbysample.R
 
 import wangfeixixi.github.com.mosbysample.base.BaseF
 
-class AFragment : BaseF<AView, APresent>(), AView {
-    private val TAG = "AFragment"
 
+class CFragment : BaseF<CView, CPresent>(), CView {
     override fun initContentRes(): Int = R.layout.a_fragment
+
+    private val TAG = "CFragment"
+
+    protected fun onUserVisible(isVisible: Boolean) {
+
+        Log.d(TAG, "onUserVisible$isVisible")
+    }
 
     override fun initView() {
         tv_name.text = TAG
+
     }
 
     override fun initData(firstLoad: Boolean, isVisibleToUser: Boolean) {
+
         Log.d(TAG, "firstLoad" + firstLoad + "isVisibleToUser" + isVisibleToUser)
-        //        presenter.asdfas();
     }
 
-    override fun createPresenter(): APresent {
-        return APresent()
+
+    override fun createPresenter(): CPresent {
+        return CPresent()
     }
 }
