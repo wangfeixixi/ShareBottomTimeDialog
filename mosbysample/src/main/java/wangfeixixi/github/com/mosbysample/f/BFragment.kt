@@ -1,6 +1,7 @@
 package wangfeixixi.github.com.mosbysample.f
 
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.b_fragment.*
 import kotlinx.android.synthetic.main.vs_test.view.*
 import wangfeixixi.github.com.mosbysample.R
@@ -12,6 +13,11 @@ class BFragment : BaseF<BView, BPresent>(), BView, View.OnClickListener {
     override fun onClick(v: View?) {
         isShow = !isShow
         showNoNet(isShow)
+        showToste(null)
+    }
+
+    private fun showToste(msg: String?) {
+        Toast.makeText(activity, msg, Toast.LENGTH_SHORT).show()
     }
 
     private var TAG = "BFragment"
@@ -20,6 +26,8 @@ class BFragment : BaseF<BView, BPresent>(), BView, View.OnClickListener {
     override fun initView() {
         tv_name.text = TAG
         tv_name.setOnClickListener(this)
+
+        btn_test.setOnClickListener({ showToste("lalalala") })
     }
 
     var v_no_net: View? = null
