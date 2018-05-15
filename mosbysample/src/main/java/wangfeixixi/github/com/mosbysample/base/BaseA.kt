@@ -31,4 +31,5 @@ abstract class BaseA<V : MvpView, P : MvpPresenter<V>> : MvpActivity<V, P>() {
     protected abstract fun onCreateView(): Int
 
     protected abstract fun init(savedInstanceState: Bundle?)
+
 }

@@ -1,6 +1,9 @@
 package wangfeixixi.github.com.mosbysample.f
 
 import android.util.Log
+import android.view.View
+import android.widget.Toast
+import butterknife.OnClick
 import kotlinx.android.synthetic.main.a_fragment.*
 import wangfeixixi.github.com.mosbysample.R
 
@@ -22,5 +25,11 @@ class AFragment : BaseF<AView, APresent>(), AView {
 
     override fun createPresenter(): APresent {
         return APresent()
+    }
+
+    @OnClick(R.id.tv_name)
+    fun tvNameClick(view: View) {
+        Log.d(TAG, "测试可以不")
+        Toast.makeText(context, "测试可以不", Toast.LENGTH_SHORT).show()
     }
 }
