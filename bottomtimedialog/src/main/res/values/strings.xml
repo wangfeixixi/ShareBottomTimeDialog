@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="gnetlink_time_validity">有效期</string>
+    <string name="gnetlink_time_start">开始时间</string>
+    <string name="gnetlink_time_end">结束时间</string>
+    <string name="gnetlink_permission">权限</string>
+    <string name="gnetlink_car_owner">亲友</string>
+    <string name="gnetlink_car_agency">临时用户</string>
+    <string name="gnetlink_glove_box">手套箱不可用</string>
+    <string name="gnetlink_always">永久</string>
+    <string name="gnetlink_choose_duration">请选择有效期</string>
+    <string name="gnetlink_one_month">一月</string>
+    <string name="gnetlink_one_week">一周</string>
+    <string name="gnetlink_one_day">一天</string>
+    <string name="gnetlink_identity">自定义</string>
+    <string name="gnetlink_cancel">取消</string>
+    <string name="gnetlink_always_valid">永久有效</string>
+
+    <string name="gnetlink_quarter">15分钟</string>
+    <string name="gnetlink_half_hour">30分钟</string>
+    <string name="gnetlink_hour">60分钟</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rec_white_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/gnetlink_choose_duration"
+            android:textColor="@color/gnetlink_grey_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gnetlink_grey_bit" />
+
+        <TextView
+            android:id="@+id/tv_always"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/gnetlink_always"
+            android:textColor="@color/gnetlink_grey_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gnetlink_grey_bit" />
+
+        <TextView
+            android:id="@+id/tv_one_month"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/gnetlink_one_month"
+            android:textColor="@color/gnetlink_grey_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gnetlink_grey_bit" />
+
+        <TextView
+            android:id="@+id/tv_one_week"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/gnetlink_one_week"
+            android:textColor="@color/gnetlink_grey_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gnetlink_grey_bit" />
+
+        <TextView
+            android:id="@+id/tv_one_day"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/gnetlink_one_day"
+            android:textColor="@color/gnetlink_grey_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gnetlink_grey_bit" />
+
+        <TextView
+            android:id="@+id/tv_identify"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/gnetlink_identity"
+            android:textColor="@color/gnetlink_grey_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="54.4dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rec_white_big"
+        android:gravity="center"
+        android:text="@string/gnetlink_cancel"
+        android:textColor="@color/gnetlink_blue"
+        android:textSize="17sp" />
+</LinearLayout>

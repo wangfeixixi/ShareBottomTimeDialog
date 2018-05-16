@@ -27,7 +27,7 @@ class BFragment : BaseF<BView, BPresent>(), BView, View.OnClickListener {
         tv_name.text = TAG
         tv_name.setOnClickListener(this)
 
-        btn_test.setOnClickListener({ showToste("lalalala") })
+        btn_test.setOnClickListener{ showToste("lalalala") }
     }
 
     var v_no_net: View? = null

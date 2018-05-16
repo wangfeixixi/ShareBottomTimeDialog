@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gnetlink_blue">#0097E0</color>
+    <color name="gnetlink_white">#ffffff</color>
+    <color name="gnetlink_black_bit">#191919</color>
+    <color name="gnetlink_grey_bit">#CCCCCC</color>
+    <color name="gnetlink_grey_bit2">#666666</color>
+    <color name="gnetlink_grey_bit3">#F9F9F9</color>
+    <color name="gnetlink_grey_bit4">#F4F4F4</color>
+    <color name="gnetlink_grey_stroke">#ECECEC</color>
+    <color name="gnetlink_grey_text">#333333</color>
+    <color name="gnetlink_transparent">#90ffffff</color>
+    <color name="gnetlink_transparent2">#33000000</color>
+</resources>

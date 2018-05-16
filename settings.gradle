@@ -1,1 +1,1 @@
-include ':app', ':timepicker', ':EditView', ':Calendar', ':Sweetdialog', ':mosbysample'
+include ':app', ':timepicker', ':EditView', ':Calendar', ':Sweetdialog', ':mosbysample', ':bottomtimedialog'
