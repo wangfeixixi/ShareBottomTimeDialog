@@ -4,27 +4,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.Toast;
+
+import wangfeixixi.github.com.bottomtimedialog.BottomDialogListener;
+import wangfeixixi.github.com.bottomtimedialog.BottomTimeDialog;
+import wangfeixixi.github.com.bottomtimedialog.BottomTimeShowDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn_timepicker;
-    Button btn_editview;
-    Button btn_calendar;
-    Button btn_sweet_dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
-        btn_timepicker = (Button) findViewById(R.id.btn_timepicker);
-        btn_timepicker.setOnClickListener(this);
-        btn_editview = (Button) findViewById(R.id.btn_editview);
-        btn_editview.setOnClickListener(this);
-        btn_calendar = (Button) findViewById(R.id.btn_calendar);
-        btn_calendar.setOnClickListener(this);
-        btn_sweet_dialog = (Button) findViewById(R.id.btn_sweet_dialog);
-        btn_sweet_dialog.setOnClickListener(this);
+
+
+        findViewById(R.id.btn_timepicker).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pop();
+            }
+        });
+    }
+
+    public void pop() {
+        BottomTimeDialog bottomTimeDialog = new BottomTimeDialog(MainActivity.this);
+        bottomTimeDialog.setOnItemClickListener(new BottomDialogListener() {
+            @Override
+            public void onItemClick(String text) {
+                Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
+            }
+        });
+        bottomTimeDialog.show();
     }
 
     @Override
@@ -41,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_sweet_dialog:
                 startActivity(new Intent(this, SweetDialogActivity.class));
+
+
                 break;
         }
     }
