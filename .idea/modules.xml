@@ -6,9 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/Calendar/Calendar.iml" filepath="$PROJECT_DIR$/Calendar/Calendar.iml" />
       <module fileurl="file://$PROJECT_DIR$/EditView/EditView.iml" filepath="$PROJECT_DIR$/EditView/EditView.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sweetdialog/Sweetdialog.iml" filepath="$PROJECT_DIR$/Sweetdialog/Sweetdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimePicker/timepicker.iml" filepath="$PROJECT_DIR$/TimePicker/timepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mosbysample/mosbysample.iml" filepath="$PROJECT_DIR$/mosbysample/mosbysample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/timepicker/timepicker.iml" filepath="$PROJECT_DIR$/timepicker/timepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/widget.iml" filepath="$PROJECT_DIR$/widget.iml" />
     </modules>
   </component>
