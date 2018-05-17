@@ -1,13 +1,11 @@
 package wangfeixixi.github.com.wiget
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.main_activity.*
-import wangfeixixi.dialog.SweetAlertDialog
 import wangfeixixi.github.com.bottomtimedialog.BottomTimeDialog
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -21,22 +19,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         Glide.with(this).load(iamgeUrl).into(iv)
 
-        findViewById(R.id.btn_timepicker).setOnClickListener {
-            SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
-                    .setTitleText("确定开启？")
-                    .setCancelText("no")
-                    .setConfirmText("ok")
-                    .showCancelButton(true)
-                    .setCancelClickListener { sDialog ->
-                        sDialog.dismissWithAnimation()
-                        sDialog.dismiss()
-                    }
-                    .setConfirmClickListener { sDialog ->
-                        sDialog.dismissWithAnimation()
-                        sDialog.dismiss()
-                    }
-                    .show()
-        }
 
         btn_sweet_dialog.setOnClickListener(this)
     }
@@ -49,10 +31,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.btn_timepicker -> startActivity(Intent(this, TimePikerActivity::class.java))
-            R.id.btn_editview -> startActivity(Intent(this, EditViewActivity::class.java))
-            R.id.btn_calendar -> startActivity(Intent(this, CalendarActivity::class.java))
-            R.id.btn_sweet_dialog -> startActivity(Intent(this, SweetDialogActivity::class.java))
         }
     }
 
