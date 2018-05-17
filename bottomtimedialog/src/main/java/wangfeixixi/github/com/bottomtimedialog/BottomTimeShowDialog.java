@@ -3,7 +3,9 @@ package wangfeixixi.github.com.bottomtimedialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
@@ -28,7 +30,17 @@ public class BottomTimeShowDialog extends BottomSheetDialog implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gnetlink_bottom_duration_temporary_choose);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.gnetlink_bottom_duration_temporary_choose, null);
+
+        setContentView(view);
+
+        View parent = (View) view.getParent();
+        parent.measure(0, 0);
+        BottomSheetBehavior<View> behavior = BottomSheetBehavior.from(parent);
+        behavior.setPeekHeight(view.getMeasuredHeight());
+        behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+        getWindow().findViewById(R.id.design_bottom_sheet).setBackgroundResource(android.R.color.transparent);
+
 
         findViewById(R.id.tv_quarter).setOnClickListener(this);
         findViewById(R.id.tv_half_hour).setOnClickListener(this);

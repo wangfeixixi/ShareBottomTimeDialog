@@ -3,8 +3,11 @@ package wangfeixixi.github.com.bottomtimedialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewParent;
 import android.widget.TextView;
 
 public class BottomTimeDialog extends BottomSheetDialog implements View.OnClickListener {
@@ -12,38 +15,39 @@ public class BottomTimeDialog extends BottomSheetDialog implements View.OnClickL
 
     public BottomTimeDialog(@NonNull Context context) {
         super(context);
-        init();
     }
 
     public BottomTimeDialog(@NonNull Context context, int theme) {
         super(context, theme);
-        init();
     }
 
     protected BottomTimeDialog(@NonNull Context context, boolean cancelable, OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
-        init();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gnetlink_bottom_duration_choose);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.gnetlink_bottom_duration_choose, null);
 
-        findViewById(R.id.tv_always).setOnClickListener(this);
-        findViewById(R.id.tv_one_month).setOnClickListener(this);
-        findViewById(R.id.tv_one_week).setOnClickListener(this);
-        findViewById(R.id.tv_one_day).setOnClickListener(this);
-        findViewById(R.id.tv_identify).setOnClickListener(this);
-        findViewById(R.id.tv_cancel).setOnClickListener(this);
-    }
+        setContentView(view);
 
-    private void init() {
+        View parent = (View) view.getParent();
+        parent.measure(0, 0);
+        BottomSheetBehavior<View> behavior = BottomSheetBehavior.from(parent);
+        behavior.setPeekHeight(view.getMeasuredHeight());
+        behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+        getWindow().findViewById(R.id.design_bottom_sheet).setBackgroundResource(android.R.color.transparent);
+
+        view.findViewById(R.id.tv_always).setOnClickListener(this);
+        view.findViewById(R.id.tv_one_month).setOnClickListener(this);
+        view.findViewById(R.id.tv_one_week).setOnClickListener(this);
+        view.findViewById(R.id.tv_one_day).setOnClickListener(this);
+        view.findViewById(R.id.tv_identify).setOnClickListener(this);
+        view.findViewById(R.id.tv_cancel).setOnClickListener(this);
 
         setCancelable(true);
         setCanceledOnTouchOutside(true);
-
-
     }
 
     private BottomDialogListener mListener;
