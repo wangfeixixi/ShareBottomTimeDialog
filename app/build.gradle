@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
+apply plugin: 'kotlin-kapt'//kapt3插件
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 25
     defaultConfig {
@@ -28,4 +31,18 @@ dependencies {
     compile project(path: ':Sweetdialog')
     compile 'com.github.zcweng:switch-button:0.0.3@aar'
     compile project(path: ':bottomtimedialog')
+
+
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //Glide v4
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    //在Kotlin中Glide的注解,kapt是 Kotlin内置的注解处理器
+    kapt 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+    //OkHttp3
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+}
+repositories {
+    mavenCentral()
 }
