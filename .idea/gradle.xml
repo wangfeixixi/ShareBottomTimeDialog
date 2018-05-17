@@ -8,13 +8,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BottomTimeDialog" />
             <option value="$PROJECT_DIR$/Calendar" />
             <option value="$PROJECT_DIR$/EditView" />
             <option value="$PROJECT_DIR$/Sweetdialog" />
+            <option value="$PROJECT_DIR$/TimePicker" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/bottomtimedialog" />
             <option value="$PROJECT_DIR$/mosbysample" />
-            <option value="$PROJECT_DIR$/timepicker" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

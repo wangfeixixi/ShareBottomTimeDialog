@@ -9,20 +9,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-public class BottomTimeShowDialog extends BottomSheetDialog implements View.OnClickListener {
+public class BottomTimeShortDialog extends BottomSheetDialog implements View.OnClickListener {
 
 
-    public BottomTimeShowDialog(@NonNull Context context) {
+    public BottomTimeShortDialog(@NonNull Context context) {
         super(context);
         init();
     }
 
-    public BottomTimeShowDialog(@NonNull Context context, int theme) {
+    public BottomTimeShortDialog(@NonNull Context context, int theme) {
         super(context, theme);
         init();
     }
 
-    protected BottomTimeShowDialog(@NonNull Context context, boolean cancelable, OnCancelListener cancelListener) {
+    protected BottomTimeShortDialog(@NonNull Context context, boolean cancelable, OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
         init();
     }

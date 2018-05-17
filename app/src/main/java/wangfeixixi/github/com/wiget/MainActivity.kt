@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.main_activity.*
+import wangfeixixi.dialog.SweetAlertDialog
 import wangfeixixi.github.com.bottomtimedialog.BottomTimeDialog
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -20,7 +21,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         Glide.with(this).load(iamgeUrl).into(iv)
 
-        findViewById(R.id.btn_timepicker).setOnClickListener { pop() }
+        findViewById(R.id.btn_timepicker).setOnClickListener {
+            SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+                    .setTitleText("确定开启？")
+                    .setCancelText("no")
+                    .setConfirmText("ok")
+                    .showCancelButton(true)
+                    .setCancelClickListener { sDialog ->
+                        sDialog.dismissWithAnimation()
+                        sDialog.dismiss()
+                    }
+                    .setConfirmClickListener { sDialog ->
+                        sDialog.dismissWithAnimation()
+                        sDialog.dismiss()
+                    }
+                    .show()
+        }
+
+        btn_sweet_dialog.setOnClickListener(this)
     }
 
     fun pop() {
