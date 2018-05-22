@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-        Glide.with(this).load(iamgeUrl).into(iv)
+//        Glide.with(this).load(iamgeUrl).into(iv)
 
 
         btn_sweet_dialog.setOnClickListener(this)
