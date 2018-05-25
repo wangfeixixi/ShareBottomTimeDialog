@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BottomTimeDialog/bottomtimedialog.iml" filepath="$PROJECT_DIR$/BottomTimeDialog/bottomtimedialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BottomTimeDialog/BottomTimeDialog.iml" filepath="$PROJECT_DIR$/BottomTimeDialog/BottomTimeDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ShareBottomTimeDialog.iml" filepath="$PROJECT_DIR$/.idea/ShareBottomTimeDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mosbysample/mosbysample.iml" filepath="$PROJECT_DIR$/mosbysample/mosbysample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/widget.iml" filepath="$PROJECT_DIR$/widget.iml" />
+      <module fileurl="file://D:\workSpace\work\share_widget\ShareBottomTimeDialog\widget.iml" filepath="D:\workSpace\work\share_widget\ShareBottomTimeDialog\widget.iml" />
     </modules>
   </component>
 </project>

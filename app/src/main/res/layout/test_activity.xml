@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="wangfeixixi.github.com.wiget.MainActivity">
+
+    <Button
+        android:id="@+id/btn_timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间选择" />
+
+    <Button
+        android:id="@+id/btn_editview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑框" />
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日历" />
+
+    <Button
+        android:id="@+id/btn_sweet_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dialog" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button"
+        android:layout_width="40dp"
+        android:layout_height="24.6dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        app:sb_checked_color="#00C5FF"
+        app:sb_show_indicator="false"
+        app:sb_background="#dddddd"
+        app:sb_uncheck_color="#dddddd"/>
+
+</LinearLayout>

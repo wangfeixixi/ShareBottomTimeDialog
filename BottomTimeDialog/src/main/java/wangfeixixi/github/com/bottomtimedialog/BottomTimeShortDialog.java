@@ -46,6 +46,7 @@ public class BottomTimeShortDialog extends BottomSheetDialog implements View.OnC
         findViewById(R.id.tv_half_hour).setOnClickListener(this);
         findViewById(R.id.tv_one_hour).setOnClickListener(this);
         findViewById(R.id.tv_cancel).setOnClickListener(this);
+        findViewById(R.id.tv_identify).setOnClickListener(this);
     }
 
     private void init() {
