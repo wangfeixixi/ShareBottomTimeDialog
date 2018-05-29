@@ -1,4 +1,4 @@
-package wangfeixixi.share.spinner;
+package wangfeixixi.share.pickdialog;
 
 import android.app.Dialog;
 import android.content.Context;
