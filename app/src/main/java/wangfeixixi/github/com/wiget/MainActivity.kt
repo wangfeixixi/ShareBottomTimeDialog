@@ -4,9 +4,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
-import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.main_activity.*
-import wangfeixixi.github.com.bottomtimedialog.BottomTimeDialog
+import wangfeixixi.share.bottomtimedialog.BottomTimeDialog
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 

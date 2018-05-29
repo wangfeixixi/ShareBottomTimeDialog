@@ -1,1 +1,1 @@
-include ':app',':mosbysample', ':BottomTimeDialog'
+include ':app', ':BottomTimeDialog'

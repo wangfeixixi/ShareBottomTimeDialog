@@ -10,7 +10,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/BottomTimeDialog" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mosbysample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
