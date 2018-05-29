@@ -24,8 +24,8 @@ public class DragLayout extends ViewGroup {
     private int height;
 
     private int offsetY;
-    private int topBorder;
-    private int bottomBorder;
+//    private int topBorder;
+//    private int bottomBorder;
     private int touchSlop;
     private int slideSlop;
     private int duration = 200;//动画时间
@@ -170,8 +170,8 @@ public class DragLayout extends ViewGroup {
                         break;
                 }
             }
-            topBorder = getChildAt(0).getTop();
-            bottomBorder = getChildAt(count - 2).getBottom();
+//            topBorder = getChildAt(0).getTop();
+//            bottomBorder = getChildAt(count - 2).getBottom();
         }
     }
 
