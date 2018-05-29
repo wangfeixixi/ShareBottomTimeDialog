@@ -24,8 +24,8 @@ public class DragLayout extends ViewGroup {
     private int height;
 
     private int offsetY;
-//    private int topBorder;
-//    private int bottomBorder;
+    private int topBorder;
+    private int bottomBorder;
     private int touchSlop;
     private int slideSlop;
     private int duration = 200;//动画时间
@@ -59,8 +59,8 @@ public class DragLayout extends ViewGroup {
 
     private void init(Context context) {
         touchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
-        slideSlop = WindowUtil.dip2px(getContext(),45);
-        offsetB = WindowUtil.dip2px(getContext(),40);
+        slideSlop = WindowUtil.dip2px(getContext(), 45);
+        offsetB = WindowUtil.dip2px(getContext(), 40);
         animation = ValueAnimator.ofFloat(0f, 1f);
         animation.setDuration(duration);
         animation.setInterpolator(new LinearInterpolator());
@@ -136,7 +136,7 @@ public class DragLayout extends ViewGroup {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         width = MeasureSpec.getSize(widthMeasureSpec);
         height = MeasureSpec.getSize(heightMeasureSpec);
-        offsetY = height - WindowUtil.dip2px(getContext(),340);//抽屉位置
+        offsetY = height - WindowUtil.dip2px(getContext(), 340);//抽屉位置
         offsetExtend = offsetY;
         offsetClose = offsetY + offsetB - height;
         offsetDefault = 0;
@@ -170,8 +170,10 @@ public class DragLayout extends ViewGroup {
                         break;
                 }
             }
-//            topBorder = getChildAt(0).getTop();
-//            bottomBorder = getChildAt(count - 2).getBottom();
+            if (getChildAt(0) != null)
+                topBorder = getChildAt(0).getTop();
+            if (getChildAt(count - 2) != null)
+                bottomBorder = getChildAt(count - 2).getBottom();
         }
     }
 
