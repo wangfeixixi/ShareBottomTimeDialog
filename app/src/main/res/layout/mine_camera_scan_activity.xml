@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/tv_idcard_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <wangfeixixi.share.camera.IDCardIndicator
+        android:id="@+id/idcard_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="30dp"
+        android:background="@mipmap/camera_close" />
+
+    <ImageView
+        android:id="@+id/iv_paizhao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@mipmap/mine_paizhao" />
+
+    <TextView
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:text="请放正驾驶证，并调整好光线"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12sp" />
+
+    <include layout="@layout/mine_camera_scan_result_include" />
+
+</RelativeLayout>

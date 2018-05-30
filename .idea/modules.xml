@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:\workSpace\work\share_widget\ShareBottomTimeDialog\ShareWidget\BottomTimeDialog.iml" filepath="D:\workSpace\work\share_widget\ShareBottomTimeDialog\ShareWidget\BottomTimeDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ShareBottomTimeDialog.iml" filepath="$PROJECT_DIR$/.idea/ShareBottomTimeDialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ShareWidget/BottomTimeDialog.iml" filepath="$PROJECT_DIR$/ShareWidget/BottomTimeDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShareWidget/ShareWidget.iml" filepath="$PROJECT_DIR$/ShareWidget/ShareWidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\workSpace\work\share_widget\ShareBottomTimeDialog\widget.iml" filepath="D:\workSpace\work\share_widget\ShareBottomTimeDialog\widget.iml" />
     </modules>

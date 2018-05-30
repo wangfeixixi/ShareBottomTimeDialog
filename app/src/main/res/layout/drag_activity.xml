@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="wangfeixixi.github.com.wiget.MainActivity">
+
+    <wangfeixixi.share.drag.DragLayout
+        android:id="@+id/poi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <wangfeixixi.share.drag.DragLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_launcher_background"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_car_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="-----"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/tv_car_location"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_car_fun"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_below="@id/tv_car_location"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vp_car_fun"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/v_indicator_left"
+                            android:layout_width="20dp"
+                            android:layout_height="2dp"
+                            android:background="#FFCECECE" />
+
+                        <View
+                            android:id="@+id/v_indicator_right"
+                            android:layout_width="20dp"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="#FFF0F0F0" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_car_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_launcher" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rl_1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal">
+
+                    <include layout="@layout/car_info_include" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </wangfeixixi.share.drag.DragLayout>
+
+
+        <wangfeixixi.share.drag.DragTextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="上滑展开更多列表"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </wangfeixixi.share.drag.DragLayout>
+
+</LinearLayout>

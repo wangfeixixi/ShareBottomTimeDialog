@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_camera_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <wangfeixixi.share.camera.IDCardIndicator
+        android:id="@+id/idcard_indicator_backgraou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rec_cor24_grey"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_cor24_grey_hollow"
+            android:gravity="center"
+            android:text="重拍此面"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:background="@mipmap/camera_capture_success"
+        android:orientation="horizontal" />
+</RelativeLayout>
