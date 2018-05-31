@@ -104,30 +104,6 @@ class CameraActivity : AppCompatActivity() , TextureView.SurfaceTextureListener,
         if (!mHasSurface) return
 
         iCamera!!.startPreview(tv_idcard_scan!!.surfaceTexture)
-        //        height = iCamera.cameraHeight;
-        //        width = iCamera.cameraWidth;
-
-        //        RectF rectF = idcard_indicator.getPosition();
-        //        int left = (int) (width * rectF.left);
-        //        int top = (int) (height * rectF.top);
-        //        int right = (int) (width * rectF.right);
-        //        int bottom = (int) (height * rectF.bottom);
-
-        //        IDCardRootBean.IDCardConfig idCardConfig = null;
-        //        try {
-        //            idCardConfig = idCard.getFaceppConfig();
-        //        } catch (Exception e) {
-        //            e.printStackTrace();
-        //        }
-        //        idCardConfig.orientation = 0;
-        //        idCardConfig.shadowAreaTh = 500;
-        //        idCardConfig.faculaAreaTh = 500;
-        //        idCardConfig.roi_left = left;
-        //        idCardConfig.roi_top = top;
-        //        idCardConfig.roi_right = right;
-        //        idCardConfig.roi_bottom = bottom;
-        //
-        //        idCard.setFaceppConfig(idCardConfig);
     }
 
     override fun onSurfaceTextureSizeChanged(surface: SurfaceTexture, width: Int, height: Int) {
