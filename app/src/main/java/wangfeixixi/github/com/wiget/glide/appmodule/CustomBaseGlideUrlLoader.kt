@@ -6,10 +6,6 @@ import com.bumptech.glide.load.model.stream.BaseGlideUrlLoader
 import java.io.InputStream
 import java.util.regex.Pattern
 
-/**
- * Created by ${新根} on 2017/7/28.
- * blog ：http://blog.csdn.net/hexingen
- */
 internal class CustomBaseGlideUrlLoader(concreteLoader: ModelLoader<GlideUrl, InputStream>, modelCache: ModelCache<String, GlideUrl>): BaseGlideUrlLoader<String>(concreteLoader,modelCache){
     /**
      * Url的匹配规则

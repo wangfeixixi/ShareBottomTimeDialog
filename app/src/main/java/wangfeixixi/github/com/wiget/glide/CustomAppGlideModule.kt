@@ -5,10 +5,6 @@ import com.bumptech.glide.load.engine.cache.LruResourceCache
 import com.bumptech.glide.module.AppGlideModule
 import com.xingen.glideokhttp.appmodule.CustomBaseGlideUrlLoader
 
-/**
- * Created by ${新根} on 2017/7/28.
- * blog ：http://blog.csdn.net/hexingen
- */
 @GlideModule
 internal class CustomAppGlideModule : AppGlideModule() {
     /**
