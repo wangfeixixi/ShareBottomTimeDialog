@@ -12,7 +12,6 @@ import android.view.View;
 import wangfeixixi.share.R;
 
 /**
- * @author donkor
  * 自定义水平\垂直电池控件
  */
 public class BatteryView extends View {
