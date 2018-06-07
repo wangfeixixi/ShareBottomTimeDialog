@@ -11,8 +11,6 @@ import java.io.InputStream
 
 
 /**
- * Created by ${新根} on 2017/7/28.
- * blog ：http://blog.csdn.net/hexingen
  * 一个简单的加载器，用于使用OkHttp通过http/https获取的流。
  */
 class OkHttpUrlLoader(var client:Call.Factory) :ModelLoader<GlideUrl,InputStream>{

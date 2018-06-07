@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://D:\workSpace\work\share_widget\ShareBottomTimeDialog\ShareWidget\BottomTimeDialog.iml" filepath="D:\workSpace\work\share_widget\ShareBottomTimeDialog\ShareWidget\BottomTimeDialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/ShareBottomTimeDialog.iml" filepath="$PROJECT_DIR$/.idea/ShareBottomTimeDialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ShareWidget/ShareWidget.iml" filepath="$PROJECT_DIR$/ShareWidget/ShareWidget.iml" />
+      <module fileurl="file://C:\Users\xuany\Androidws\workspace\other\ShareWidget\.idea\ShareBottomTimeDialog.iml" filepath="C:\Users\xuany\Androidws\workspace\other\ShareWidget\.idea\ShareBottomTimeDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ShareWidget.iml" filepath="$PROJECT_DIR$/.idea/ShareWidget.iml" />
+      <module fileurl="file://C:\Users\xuany\Androidws\workspace\other\ShareWidget\ShareWidget\ShareWidget.iml" filepath="C:\Users\xuany\Androidws\workspace\other\ShareWidget\ShareWidget\ShareWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Widgets/Widgets.iml" filepath="$PROJECT_DIR$/Widgets/Widgets.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\xuany\Androidws\workspace\other\ShareWidget\app\app.iml" filepath="C:\Users\xuany\Androidws\workspace\other\ShareWidget\app\app.iml" />
       <module fileurl="file://D:\workSpace\work\share_widget\ShareBottomTimeDialog\widget.iml" filepath="D:\workSpace\work\share_widget\ShareBottomTimeDialog\widget.iml" />
     </modules>
   </component>
