@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
 
-        verticalBattery!!.setColor(Color.BLACK)
-        verticalBattery!!.setPower(85)
+        verticalBattery!!.setColor(Color.GRAY)
+        verticalBattery!!.setPower(90)
 
         Timer().schedule(object : TimerTask() {
             override fun run() {
