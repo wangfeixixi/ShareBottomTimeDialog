@@ -90,7 +90,9 @@ public class BottomCaptureDialog extends BottomSheetDialog implements View.OnCli
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.tv_camera || v.getId() == R.id.tv_capture || v.getId() == R.id.tv_cancel_capture) {
-            if (mListener != null) mListener.onItemClick(((TextView) v).getText().toString());
+            CharSequence text = ((TextView) v).getText();
+            if (mListener != null && text != null)
+                mListener.onItemClick(text.toString());
         }
         dismiss();
     }
