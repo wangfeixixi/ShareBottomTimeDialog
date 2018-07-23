@@ -77,8 +77,8 @@ public class BottomCaptureDialog extends BottomSheetDialog implements View.OnCli
     }
 
     private void init() {
-        setCancelable(false);
-        setCanceledOnTouchOutside(false);
+        setCancelable(true);
+        setCanceledOnTouchOutside(true);
     }
 
     private BottomDialogListener mListener;
@@ -89,7 +89,9 @@ public class BottomCaptureDialog extends BottomSheetDialog implements View.OnCli
 
     @Override
     public void onClick(View v) {
-        if (mListener != null) mListener.onItemClick(((TextView) v).getText().toString());
+        if (v.getId() == R.id.tv_camera || v.getId() == R.id.tv_capture || v.getId() == R.id.tv_cancel) {
+            if (mListener != null) mListener.onItemClick(((TextView) v).getText().toString());
+        }
         dismiss();
     }
 }
