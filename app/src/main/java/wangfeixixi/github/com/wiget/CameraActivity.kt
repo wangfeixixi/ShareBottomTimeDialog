@@ -17,16 +17,13 @@ import wangfeixixi.share.camera.ICamera
 import wangfeixixi.share.camera.Screen
 
 
-class CameraActivity : AppCompatActivity() , TextureView.SurfaceTextureListener, Camera.PreviewCallback {
+class CameraActivity : AppCompatActivity(), TextureView.SurfaceTextureListener, Camera.PreviewCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mine_camera_scan_activity)
 
         Screen.initialize(this)
-
-        //        mHandlerThread.start();
-        //        mHandler = new Handler(mHandlerThread.getLooper());
 
         iCamera = ICamera(false)
         //
@@ -39,11 +36,7 @@ class CameraActivity : AppCompatActivity() , TextureView.SurfaceTextureListener,
         iv_close.setOnClickListener { finish() }
     }
 
-    //    private HandlerThread mHandlerThread = new HandlerThread("hhh");
-    //    private Handler mHandler;
-
     private var iCamera: ICamera? = null
-    //    private IDCardRootBean idCard;
 
     private var mHasSurface = false
     private val setClear = 0.8f
