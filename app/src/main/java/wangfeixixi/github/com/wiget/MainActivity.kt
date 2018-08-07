@@ -37,13 +37,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-//        Glide.with(this).load(iamgeUrl).into(iv)
-
-
-        btn_sweet_dialog.setOnClickListener(this)
-
-
-
         verticalBattery!!.setColor(Color.GRAY)
         verticalBattery!!.setPower(90)
 
@@ -60,9 +53,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         bottomTimeDialog.show()
     }
 
-    override fun onClick(v: View) {
-        when (v.id) {
-        }
-    }
 
 }
