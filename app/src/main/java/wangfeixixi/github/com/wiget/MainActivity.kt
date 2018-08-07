@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.main_activity.*
 import wangfeixixi.share.bottomtimedialog.BottomTimeDialog
 import java.util.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity() {
 
     private val iamgeUrl = "http://p3tnh1dg6.bkt.clouddn.com/ca1349540923dd548b8a28fbda09b3de9d8248ac.jpg"
 
