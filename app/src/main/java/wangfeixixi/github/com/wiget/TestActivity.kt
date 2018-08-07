@@ -14,12 +14,10 @@ class TestActivity : Activity() {
         verticalLayout {
             val name = editText()
             button("Say Hello") {
-             setOnClickListener {
+                setOnClickListener {
                     toast("Hello, ${name.text}!")
 
-             }
-//                onClick {
-//                }
+                }
             }
         }
     }
