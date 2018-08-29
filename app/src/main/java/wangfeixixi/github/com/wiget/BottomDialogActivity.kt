@@ -20,8 +20,11 @@ class BottomDialogActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bottom_dialog_activity)
+
         mCtx = this
+
         findViewById(R.id.btn).setOnClickListener {
+
             val bottomCaptureDialog = BottomCaptureDialog(mCtx as BottomDialogActivity)
             bottomCaptureDialog.setOnItemClickListener { text ->
                 when (text) {
