@@ -13,7 +13,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val iamgeUrl = "http://p3tnh1dg6.bkt.clouddn.com/ca1349540923dd548b8a28fbda09b3de9d8248ac.jpg"
+//    private val iamgeUrl = "http://p3tnh1dg6.bkt.clouddn.com/ca1349540923dd548b8a28fbda09b3de9d8248ac.jpg"
 
     var mPower: Int = 0
     val mHandler = object : Handler() {
