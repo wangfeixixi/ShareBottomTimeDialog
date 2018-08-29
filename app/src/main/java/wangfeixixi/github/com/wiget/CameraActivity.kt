@@ -25,14 +25,20 @@ class CameraActivity : AppCompatActivity(), TextureView.SurfaceTextureListener, 
 
         Screen.initialize(this)
 
+
         iCamera = ICamera(false)
         //
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+
         tv_idcard_scan!!.surfaceTextureListener = this
 
+
         tv_idcard_scan.setOnClickListener { iCamera!!.autoFocus() }
+
         idcard_indicator.setOnClickListener { iCamera!!.autoFocus() }
+
         iv_paizhao.setOnClickListener { isPaizhao = true }
+
         iv_close.setOnClickListener { finish() }
     }
 
