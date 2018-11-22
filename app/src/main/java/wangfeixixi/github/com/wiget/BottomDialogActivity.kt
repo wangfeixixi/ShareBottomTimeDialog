@@ -22,8 +22,7 @@ class BottomDialogActivity : AppCompatActivity() {
         setContentView(R.layout.bottom_dialog_activity)
 
         mCtx = this
-
-        findViewById(R.id.btn).setOnClickListener {
+        btn.setOnClickListener {
 
             val bottomCaptureDialog = BottomCaptureDialog(mCtx as BottomDialogActivity)
             bottomCaptureDialog.setOnItemClickListener { text ->
